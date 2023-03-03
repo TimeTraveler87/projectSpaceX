@@ -1,0 +1,94 @@
+@use 'style';
+#containerContent{
+    background-color: style.$main_theme;
+    color: style.$text_color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: space-around;
+        width: 90%;
+        border: 2px solid style.$text_color;
+        margin-left: auto;
+        margin-right: auto;
+        button{
+            height: 40px;
+            width: 100px;
+            background-color: inherit;
+            color:inherit;
+            border: 2px solid style.$text_color;
+        }
+        h3{
+            color:rgb(162, 124, 199);
+        }
+        
+    }
+    .about{
+        background: linear-gradient(0deg, rgba(43, 193, 101, 0.9) 0.00%, rgba(0, 0, 0, 0.7) 20.00%), url(../images/bg1.jpg);
+        background-position: center 10%;
+        // background: radial-gradient(0deg, rgba(15, 153, 20, 0.9) 0.00%, rgba(218, 208, 208, 0) 40.00%), url(../images/bg1.jpg);
+        background-size:cover;
+        height: 200px;
+        #paragraph{
+            >*
+            {
+                padding-left: 5px;
+            }
+            display: flex;
+        }
+
+    }
+    .chiffres{
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.75), 
+            rgba(0, 0, 0, 0.75)
+            ),url(../images/bg1.jpg);
+        
+        background-size:cover;
+        background-position: center 80%;
+        justify-content: flex-start;
+        
+        height: 400px;
+        >*:not(:nth-child(3)){
+            padding-top: 20px;
+        }
+        #card-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .card{
+                width: 300px;
+                display: flex;
+
+                .description{
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        >:last-child, >:nth-last-child(2){
+            padding-top: 80px;
+        }
+        >:last-child{
+            padding-right: 50px;
+            align-self: flex-end;
+        }
+        #btn{
+            width: 300px;
+            >*{
+                width: 100%;
+            }
+        }
+    }
+}

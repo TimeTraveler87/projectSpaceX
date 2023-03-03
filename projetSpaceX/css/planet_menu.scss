@@ -1,0 +1,51 @@
+@use 'style';
+#containerContent
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: style.$main_theme;
+    >*{
+        color: style.$text_color;
+        margin:25px 0 0 25px;
+        border:2px solid style.$text_color;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        background-color: style.$main_theme;
+        width: 30%;
+        height: 75%;
+        >*{
+            margin:20px 20px 0 20px;
+        }
+        
+        #search{
+            border-bottom: 2px solid style.$text_color;
+            >*{
+                width: 100%;
+                height: 30px;
+            }
+            
+        }
+        #list-result{
+            >*{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid style.$text_color;
+            }
+            display: flex;
+            flex-direction: column;
+            #summary{
+                background: rgb(64, 133, 211);
+            }
+        }
+    }
+    #display{
+        margin-left: 200px;
+        height: 15%;
+        width: 700px;
+        background-color: style.$main_theme;
+    }
+
+}

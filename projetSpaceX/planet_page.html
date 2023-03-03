@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/planet_menu.css">
+</head>
+<body>
+    <div class="navbar h">
+        <img src="images/spaceX.jpg" alt="OK">
+        <div class="items">
+            <a href="index.html">ACCUEIL</a>
+            <a>PROCHAINE MISSION</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="navbar v">
+            <div class="items">
+                <div id="planet" class="active">
+                    <img src="images/planet.jpg" alt="OK">
+                    <p>PLANETES</p>
+                </div>
+                <div class="vehicule">
+                    <img src="images/ship.jpg" alt="OK">
+                    <p>VEHICULES</p>
+                </div>
+                <div class="personne">
+                    <img src="images/person.jpg" alt="OK">
+                    <p>PERSONNES</p>
+                </div>
+            </div>
+        </div>
+        <div id="containerContent">
+            <div id="content">
+                <p>PLANETES</p>
+                <div id="droplist">
+                    <select id="select-planet">
+                    </select>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="Faites votre recherche">
+                </div>
+                <div id="list-result">
+                    <div id="summary">
+                        <p>Nom</p><p>Terrain</p>
+                    </div>
+                    <div>
+                        <p>TEST</p><p>TEST</p>
+                    </div>
+                </div>
+                <p id="count">60 resultat(s)</p>
+            </div>
+            <div id="display">
+                <p class="styled">Sélectionner le contenu à afficher !</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="script.js"></script> -->
+    <script src="planet_scrips.js"></script>
+</body>
+</html>
